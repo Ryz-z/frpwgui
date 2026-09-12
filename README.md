@@ -1,5 +1,5 @@
 # FrpWin · Windows 内网穿透图形管理器
-
+**⚠️服务端必须以管理员身份运行**
 把 [frp](https://github.com/fatedier/frp) 包装成 Windows 原生程序的一套工具：
 一个全中文的图形管理器 + 一键安装包，装完桌面就有快捷方式，不用再手写 TOML 配置。
 
