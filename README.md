@@ -28,7 +28,7 @@
 
 ## 快速开始
 
-直接用安装包
+### 方式一：直接用安装包
 
 到 [Releases](../../releases) 下载 `setup.exe`，双击安装。
 
@@ -36,6 +36,11 @@
 - 桌面生成快捷方式「FrpWin 内网穿透套装」
 - 数据目录 `C:\ProgramData\FrpWin\`（配置文件与日志，卸载时保留）
 - 支持 `/CURRENTUSER` 参数安装到当前用户目录（不需要管理员权限）
+
+### 方式二：绿色免安装
+
+下载 Release 里的「绿色免安装版」，把三个 exe 放在同一个文件夹里，双击 `FrpWin.exe`。
+注意 `FrpWin.exe` 是从**自己所在目录**找 `frps.exe` / `frpc.exe` 的，三个必须放一起。
 
 ### 五分钟跑通
 
@@ -63,6 +68,13 @@
 | 运行脚本 | Windows PowerShell 5.1（系统自带） |
 
 ### 构建步骤
+
+# 1) 下载 frp 源码并编译出 frps.exe / frpc.exe（含 Web 管理面板）
+.\scripts\fetch-frp.ps1
+
+# 2) 编译图形管理器 + 打安装包 + 组装 dist 目录
+.\scripts\build.ps1
+```
 
 产物在 `dist\`：
 ```
